@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./ecommerce-product-page-main/images/favicon-32x32.png" type="image/x-icon">
+    <title>Footwear Product Page</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <nav class="navbar">
+                <div class="left-navbar">
+                    <div class="nav-hamburger">
+                        <img src="./ecommerce-product-page-main/images/icon-menu.svg" alt="" class="nav-logo" id="nav-logo">
+                        <div class="navbar-menu">
+                            <ul class="navbar-links">
+                                <li><img src="./ecommerce-product-page-main/images/icon-close.svg" alt="" class="close-nav"></li>
+                                <li><a href="">Collections</a></li>
+                                <li><a href="">Men</a></li>
+                                <li><a href="">Women</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src="./ecommerce-product-page-main/images/logo.svg" alt="" class="header-logo">
+                </div>
+                <div class="right-navbar">
+                    <div class="cart">
+                        <div class="cart-amount">
+                            <p class="cart-no"> 0</p>
+                        </div>
+                        <div class="cart-ctn">
+                            <img src="./ecommerce-product-page-main/images/icon-cart.svg" alt="" class="cart-img">
+                        </div>
+                        <div class="cart-info present">
+                            <div class="cart-info-header">
+                                <p class="card-title">
+                                    Cart
+                                </p>
+                            </div>
+                            <div class="cart-info-content">
+                               <div class="cart-content">
+                                <p class="cart-empty">
+                                    Your cart is empty
+                                </p>
+                               </div>
+                               <div class="cart-products"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./ecommerce-product-page-main/images/image-avatar.png" alt="" class="profile-img">
+                </div>
+            </nav>
+        </header>
+        <main class="page-body">
+            <div class="product-content"> 
+                <div class="product-image" onclick="viewModal()">
+                    <div class=" product product1">
+                        <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="" class="product1-img">
+                    </div>
+                    <div class="product product2">
+                        <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="" class="product2-img">
+                    </div>
+                    <div class=" product product3">
+                        <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="" class="product3-img">
+                    </div>
+                    <div class="product product4">
+                        <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="" class="product4-img">
+                    </div>
+                </div>
+                <div class="modal-box fade">
+                    <div class="modal-images">
+                        <div class="close-modal" onclick="closeModal()">
+                            <img src="./ecommerce-product-page-main/images/icon-close.svg" alt="" class="close-img">
+                        </div>
+                        <div class="modal-pimg">
+                            <div class=" modal-product product1">
+                                <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="" class="product1-mimg">
+                            </div>
+                            <div class="modal-product product2" >
+                                <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="" class="product2-mimg" >
+                            </div>
+                            <div class=" modal-product product3">
+                                <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="" class="product3-mimg">
+                            </div>
+                            <div class="modal-product product4">
+                                <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="" class="product4-mimg">
+                            </div>
+                        </div>
+                        <div class="modal-product-button">
+                            <div class="modal-prev">
+                                <img src="./ecommerce-product-page-main/images/icon-previous.svg" alt="" class="prev-mimg">
+                            </div>
+                            <div class="modal-next">
+                                <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="" class="next-mimg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-button">
+                    <div class="prev">
+                        <img src="./ecommerce-product-page-main/images/icon-previous.svg" alt="" class="prev-img">
+                    </div>
+                    <div class="next">
+                        <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="" class="next-img">
+                    </div>
+                </div>
+                <div class="product-thumbnail">
+                    <div class=" product-thumb product1-thumb" onclick="showthumb(1)">
+                        <img src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="" class="product1-imgthumb" >
+                    </div>
+                    <div class="product-thumb product2-thumb" onclick="showthumb(2)">
+                        <img src="./ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="" class="product2-imgthumb">
+                    </div>
+                    <div class=" product-thumb product3-thumb"onclick="showthumb(3)">
+                        <img src="./ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="" class="product3-imgthumb">
+                    </div>
+                    <div class="product-thumb product4-thumb"onclick="showthumb(4)">
+                        <img src="./ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="" class="product4-imgthumb">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info-content">
+                    <h5 class="info-header">
+                        SNEAKER COMPANY
+                    </h5>
+                    <h3 class="product-description">
+                        Fall Limited Edition <br> Sneakers
+                    </h3>
+                    <p class="footwear-description">
+                        These low-profile sneakers are your perfect casual wear <br>companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+                    </p>
+                    <div class="pricing">
+                        <div class="product-price">
+                            <div class="main-price">
+                                $125.00
+                            </div>
+                            <div class="discount">
+                                50%
+                            </div>
+                        </div>
+                        <div class="discounted-price">
+                            $250.00
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="product-number">
+                            <div class="decrement" onclick="decrement()">
+                                <img src="./ecommerce-product-page-main/images/icon-minus.svg" alt="" class="decrement-img">
+                            </div>
+                            <div class="number">
+                                0
+                            </div>
+                            <div class="increment" onclick="increment()">
+                                <img src="./ecommerce-product-page-main/images/icon-plus.svg" alt="" class="increment-img">
+                            </div>
+                        </div>
+                        <button class="adding-cart" onclick="addCart()">
+                            <img src="./ecommerce-product-page-main/images/icon-cart.svg" alt="" class="cart-img">
+                            <p class="info">Add to Cart</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
